@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #282c34;
+}
+
+.line {
+    position: relative;
+    width: 80%;
+    height: 10px;
+    background-color: #61dafb;
+    margin-top: 20px;
+}
+
+.dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    top: -5px; /* Center the dot on the line */
+    z-index: 2; /* Ensure dots are above the player */
+}
+
+#dot1 { left: 20%; }
+#dot2 { left: 40%; }
+#dot3 { left: 60%; }
+#dot4 { left: 80%; }
+
+.player {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    border-radius: 50%;
+    top: -5px; /* Center the player on the line */
+    left: 0;
+    z-index: 1; /* Ensure player is below the dots */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+}
